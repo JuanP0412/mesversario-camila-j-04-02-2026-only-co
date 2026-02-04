@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Mesversario 💖</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<canvas id="hearts"></canvas>
+
+<section class="hero">
+  <h1>¡Feliz Mesversario, Mi chiquita brava! 💕</h1>
+  <p>Llevamos <strong><span id="days"></span></strong> días juntos</p>
+</section>
+
+<section class="section">
+  <h2>Nuestros Momentos ✨</h2>
+
+  <div class="gallery">
+    <img src="img/foto1.jpg">
+    <img src="img/foto2.jpg">
+    <img src="img/foto3.jpg">
+    <img src="img/foto4.jpg">
+    <img src="img/foto5.jpg">
+    <img src="img/foto6.jpg">
+    <img src="img/foto7.jpg">
+    <img src="img/foto8.jpg">
+  </div>
+
+  <div class="letter-btn">
+    <button onclick="openLetter()">💌 Abrir Carta</button>
+  </div>
+</section>
+
+<div class="modal" id="letter">
+  <div class="modal-content">
+    <h2>Para ti, mi amor 💖</h2>
+    <p>
+      Feliz mesversario, mi amor 🩷<br><br>
+
+      Ya son dos meses desde que aceptaste ser mi compañera de vida y ojalá lo seas por todo el tiempo que me lo permitas.<br><br>
+
+      Gracias por cada risa, por cada momento de alegría y por esos instantes tan tuyos en los que me correteas por toda la casa con lo primero que tengas en la mano 😅💞.<br><br>
+
+      Gracias, mi amor, muchas pero muchas gracias por estar ahí siempre. Porque aunque no siempre tengas todas las respuestas a lo que la vida nos presenta, tu compañía es más que suficiente.<br><br>
+
+      Saber que puedo contar contigo me da una paz en el corazón que no sabes cuánto valoro.<br><br>
+
+      Por favor no cambies nunca, mi amor.<br><br>
+
+      <strong>Te amo, mi chiquita brava 💕</strong>
+    </p>
+
+    <button onclick="closeLetter()">Cerrar</button>
+  </div>
+</div>
+
+<div class="music" onclick="toggleMusic()">🎵</div>
+<audio id="song" loop>
+  <source src="audio/idea10.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
